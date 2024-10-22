@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: alpha-guestbook-01
+  name: quest-guestbook-01
   namespace: argocd
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: alpha-guestbook-01
+    namespace: quest-guestbook-01
   project: default
   source:
     repoURL: https://github.com/argoproj/argocd-example-apps.git
